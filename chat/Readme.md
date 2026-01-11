@@ -1,12 +1,6 @@
 # TCP Chat Application (Go)
 
-A multi-client TCP chat server where user connects via TCP, register nickname, list users, send direct messages and broadcasts messages to groups.
-
-## Commands
-1. /NCK <nickname>: register a nickname. 
-2. /LST: show list of registered nicknames. 
-3. /MSG <recipients> <message>: send message to recipients. 
-4. /GRP <groupname> <users>: register a group for registered users.  
+A multi-client TCP chat server where clients connect via TCP, register nickname, list users, send direct messages and broadcasts messages to groups.  
 
 ## How to run locally
 
@@ -26,6 +20,42 @@ From the project root(where go.mod is)
 ```bash
 go run ./cmd/client
 ```
+
+Start many clients with different terminals to test 
+
+## Commands
+
+Commands are case-insensitive
+
+### /NCK <nickname>
+Set or change a nickname.
+Must start with alphabet optionally followed by alphanemeric or underscore. Up to 10 characters.
+Fail when the nickname is taken. 
+
+Example:
+/nck homer 
+
+### /LST
+Show list of registered nicknames. 
+
+Example:
+/LST
+
+### /MSG <recipients> <message>
+Send message to recipients. 
+Must set nickname first. 
+
+Examples:
+/MSG homer hello homer 
+/msg homer,bart hello simpson!
+
+### /GRP <groupname> <users>
+Register a group for registered users.
+Group name must start with #
+
+Example:
+/GRP #simpson homer,bart
+/MSG #simpson hello simpson!
 
 ## Architecture
 Server 
