@@ -8,6 +8,25 @@ A multi-client TCP chat server where user connects via TCP, register nickname, l
 3. /MSG <recipients> <message>: send message to recipients. 
 4. /GRP <groupname> <users>: register a group for registered users.  
 
+## How to run locally
+
+### Prerequisites 
+- Go 1.22+ (tested with Go 1.22.2)
+
+### Start the server(terminal 1)
+From the project root(where go.mod is)
+
+```bash
+go run ./cmd/server
+```
+
+### Start a client(terminal 2)
+From the project root(where go.mod is)
+
+```bash
+go run ./cmd/client
+```
+
 ## Architecture
 Server 
 data:
