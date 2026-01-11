@@ -29,32 +29,46 @@ Commands are case-insensitive
 
 ### `/NCK <nickname>`
 Set or change a nickname.
+
 Must start with alphabet optionally followed by alphanemeric or underscore. Up to 10 characters.
+
 Fail when the nickname is taken. 
 
+
 Example:
+
 /nck homer 
 
 ### /LST
 Show list of registered nicknames. 
 
+
 Example:
+
 /LST
 
 ### `/MSG <recipients> <message>`
 Send message to recipients. 
+
 Must set nickname first. 
 
+
 Examples:
+
 /MSG homer hello homer 
+
 /msg homer,bart hello simpson!
 
 ### `/GRP <groupname> <users>`
 Register a group for registered users.
+
 Group name must start with #
 
+
 Example:
+
 /GRP #simpson homer,bart
+
 /MSG #simpson hello simpson!
 
 ## Architecture
