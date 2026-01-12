@@ -30,10 +30,9 @@ Commands are case-insensitive
 ### `/NCK <nickname>`
 Set or change a nickname.
 
-Must start with alphabet optionally followed by alphanemeric or underscore. Up to 10 characters.
+- Must start with alphabet optionally followed by alphanemeric or underscore. Up to 10 characters.
 
-Fail when the nickname is taken. 
-
+- Fail when the nickname is taken. 
 
 Example:
 
@@ -42,7 +41,6 @@ Example:
 ### /LST
 Show list of registered nicknames. 
 
-
 Example:
 
 /LST
@@ -50,8 +48,7 @@ Example:
 ### `/MSG <recipients> <message>`
 Send message to recipients. 
 
-Must set nickname first. 
-
+- Must set nickname first. 
 
 Examples:
 
@@ -62,8 +59,7 @@ Examples:
 ### `/GRP <groupname> <users>`
 Register a group for registered users.
 
-Group name must start with #
-
+- Group name must start with # followed by alphabet and optionally followed by alphanumeric or underscore character. Up to 11 characters.
 
 Example:
 
