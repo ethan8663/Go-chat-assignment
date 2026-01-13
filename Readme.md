@@ -74,3 +74,5 @@ Example:
 - Server retrieves `Message` from `messages` channel and replies through `Replies` channel which each client has.
 
 This design avoids shared mutable state between goroutines.
+
+Refer to Architecture.md for detailed internal structure.
