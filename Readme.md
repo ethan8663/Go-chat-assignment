@@ -7,7 +7,7 @@ A multi-client TCP chat server where clients connect via TCP, register nickname,
 ### Prerequisites 
 - Go 1.22+ (tested with Go 1.22.2)
 
-### Start the server(terminal 1)
+### Start a server(terminal 1)
 From the project root(where go.mod is)
 
 ```bash
@@ -21,7 +21,7 @@ From the project root(where go.mod is)
 go run ./cmd/client
 ```
 
-Start many clients with different terminals to test 
+You can start many clients with different terminals to test 
 
 ## Commands
 
@@ -38,7 +38,7 @@ Example:
 
 /nck homer 
 
-### /LST
+### `/LST`
 Show list of registered nicknames. 
 
 Example:
